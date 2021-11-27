@@ -28,10 +28,12 @@ class ViewController: UIViewController {
         springAnimationView.animation = animation.name
         springAnimationView.curve = animation.curve
         springAnimationView.duration = 1
+//        springAnimationView.delay = 1
+//        springAnimationView.force = 1
         springAnimationView.animate()
         
         animation = Animation.getRandomAnimation()
-        sender.setTitle("Run \(animation.name)", for: .normal)
+        sender.setTitle("Run \(nameAnimationLabel.text!)", for: .normal)
     }
     
 }
